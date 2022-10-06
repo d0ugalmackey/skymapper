@@ -29,3 +29,4 @@ These are due to thin-film interference effects in the detector when illuminated
 Here the illumination is provided by groups of night-sky emission lines, so the fringe intensity varies with time.
 SkyMapper images are stored in the astronomical standard fits format, see https://en.wikipedia.org/wiki/FITS
 
+ 
