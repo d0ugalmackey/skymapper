@@ -2,12 +2,15 @@
 Standalone scripts and examples for the correction of bias noise and fringing in SkyMapper images
 
 bias/
-Scripts to remove row-based electronic noise from SkyMapper images with a PCA-based algorithm
+
+Scripts to remove row-based electronic noise from SkyMapper images with a PCA-based algorithm:
+
 - run_bias_correction.pl is a helper script that prepares the data and runs the two python scripts in order for a given night
 - bias_magic.py learns the nightly PCs describing the row-oriented noise patterns in SkyMapper images
 - science_magic.py uses the nightly PCs to correct bias noise in all SkyMapper science images from that night
 - bias_correct.sxt, bias_correct.conv, bias_correct.param contain parameters controlling Source Extractor
 - three example outcomes (before & after) are provided - basic, crowded, nebulosity
+
 The python scripts require numpy, scipy, sklearn, astropy, and a locally-installed instance of Source Extractor.
 For the latter see: https://www.astromatic.net/software/sextractor/
 
