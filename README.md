@@ -1,7 +1,7 @@
-## skymapper
+# skymapper
 Standalone scripts and examples for the correction of bias noise and fringing in SkyMapper images
 
-# bias/
+## bias/
 
 Scripts to remove row-based electronic noise from SkyMapper images with a PCA-based algorithm:
 
@@ -15,10 +15,10 @@ The python scripts require numpy, scipy, sklearn, astropy, and a locally-install
 For the latter see: https://www.astromatic.net/software/sextractor/
 
 
-# fringe/
+## fringe/
 
 
-# Some brief notes on SkyMapper images:
+## Some brief notes on SkyMapper images:
 
 The focal plane of the SkyMapper camera is tiled with 32 CCDs containing 2048x4096 pixels each (268.4 Mpix total).
 Each CCD is read out through 2 amplifiers, with the split at column 1024. Hence a given image has 64 extensions ("frames").
