@@ -17,6 +17,21 @@ For the latter see: https://www.astromatic.net/software/sextractor/
 
 ## fringe/
 
+Scripts to remove fringing pattern from SkyMapper images in i,z filters with a PCA-based algorithm:
+
+- create_input_list.pl is a helper script that prepares a list of the science images of interest from SDP output folders
+- input_list.dat is an example of the list file created by this script
+- preprocess_images.py runs a processing algorithm over all these images to compute statistics and prepare them for PCA
+- preprocessing.log is the log file created by this script
+- reformat_logfile.pl is a helper script to reformat this log and merge with some data in the input list
+- preprocessed_images.dat is the new list created by this script
+- create_fringe_pcs.py filters the image list to select a "good" subset and uses these image to compute the fringe PCs
+- subtract_fringe_pcs.py uses the fringe PCs to model and subtract the fringe pattern from science frames
+- bias_correct.sxt, bias_correct.conv, bias_correct.param contain parameters controlling Source Extractor
+- an image showing three example outcomes (before, after, and model) are provided
+
+As before, the python scripts require numpy, scipy, sklearn, astropy, and a locally-installed instance of Source Extractor.
+
 
 ## Some brief notes on SkyMapper images:
 
